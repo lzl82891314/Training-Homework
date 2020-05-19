@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Excel On Web</title>
+        <!-- <link rel="stylesheet" type="text/css" href="./css/style.css"> -->
+        <link rel="stylesheet" type="text/css" href="./css/static.css" />
+        <link rel="stylesheet" type="text/css" href="./css/dynamic.css" />
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="header">
+                <h2 class="title">Excel On Web</h2>
+            </div>
+            <div class="body">
+                <div class="container container-width container-height" id="container" oncontextmenu="return false;">
+                    <div class="table-relative" dragstart="return false;">
+                        <div class="table" id="table" dragstart="return false;"></div>
+                        <div class="selected-border border-horizon hidden" id="border-top"></div>
+                        <div class="selected-border border-vertical hidden" id="border-left"></div>
+                        <div class="selected-border border-vertical hidden" id="border-right"></div>
+                        <div class="selected-border border-horizon hidden" id="border-bottom"></div>
+                        <input type="text" id="input" class="cell-input hidden" />
+                    </div>
+                    <div class="peak head-bg" id="peak"></div>
+                    <div class="column-head" id="columnHead" dragstart="return false;"></div>
+                    <div class="row-head" id="rowHead" dragstart="return false;"></div>
+                    <div class="scroll scroll-vertical hidden" id="verticalScroll" dragstart="return false;">
+                        <div class="bar bar-vertical" id="verticalBar" dragstart="return false;"></div>
+                    </div>
+                    <div class="scroll scroll-horizon hidden" id="horizonScroll" dragstart="return false;">
+                        <div class="bar bar-horizon" id="horizonBar" dragstart="return false;"></div>
+                    </div>
+                    <div class="dotted-line column-line hidden"></div>
+                    <div class="dotted-line row-line hidden"></div>
+                    <div class="context-menu hidden" id="contextMenu">
+                        <div class="control-panel"><span id="insertSpan" class="update-span">Insert</span></div>
+                        <div class="control-panel"><span id="removeSpan" class="update-span">Remove</span></div>
+                    </div>
+                </div>
+
+                <div class="functionContainer">
+                    <div class="input-level">
+                        <div class="input-level-text">Row</div>
+                        <input type="text" placeholder="支持 2000 及以上" class="input-level-value" id="row-value" />
+                    </div>
+                    <div class="input-level" style="margin-left: 20px;">
+                        <div class="input-level-text">Column</div>
+                        <input type="text" placeholder="支持 2000 及以上" class="input-level-value" id="column-value" />
+                    </div>
+                    <button id="btnChange" class="btn btn-submit" style="margin-left: 20px;">确定</button>
+                </div>
+            </div>
+            <div class="footer"><h3 class="h3">Coding By Jeffery Li</h3></div>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="./dist/main.js"></script>
+</html>

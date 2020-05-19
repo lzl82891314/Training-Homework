@@ -1,0 +1,23 @@
+.hidden {
+    display: none;
+}
+
+.show-block {
+    display: block;
+}
+
+.resizing-column {
+    cursor: col-resize;
+}
+
+.resizing-row {
+    cursor: row-resize;
+}
+
+.current {
+    border: 1px solid rgb(33, 115, 70);
+}
+
+.selected {
+    background-color: rgba(208, 208, 208, 0.6);
+}

@@ -1,0 +1,8 @@
+{
+    "name": "calculator",
+    "description": "a javascript calculating function",
+    "version": "1.0.0",
+    "dependencies": {
+        "chai": "^4.2.0"
+    }
+}

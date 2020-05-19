@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Jigsaw Puzzle</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <h1 class="title">Jigsaw Puzzle</h1>
+            </div>
+            <div class="container front" id="puzzleContainer">
+            </div>
+
+            <div class="container bg" id="bgContainer"></div>
+
+            <div class="functionContainer">
+                <div class="input-level">
+                    <div class="input-level-text">Level </div>
+                    <input type="text" placeholder="可选择 2 - 16 级" class="input-level-value" id="level-value">
+                </div>                
+                <button id="btnLevelChange" class="btn btn-submit">确定</button>
+                <button id="btnClear" class="btn btn-normal">重置</button>
+                <input type="file" id="inputFile" accept="image/*" style="display: none;" />
+                <button id="fileUploadButton" class="btn btn-normal">选择图片</button>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="h3"><h3>Coding By Jeffery Li</h3></div>
+            </div>
+        </footer>
+    </body>
+    <script type="text/javascript" src="./js/main.js"></script>
+</html>
